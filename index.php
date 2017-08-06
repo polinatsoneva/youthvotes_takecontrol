@@ -5,9 +5,10 @@
 	<title>#TAKECONTROL</title>
 	<meta name="description" content="Roskilde Festival / 2018 / Denmark / Copenhagen / VALG">
 	<meta name="viewport takecontrol" content="width=device-width, initial-scale=1">
-
+    <link rel="icon" type="image/png" href="images/logo1.png" />
 	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="formstyle.css" rel="stylesheet">
 	<script src="js/jquery-1.6.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/init.js"></script>
@@ -92,21 +93,37 @@
             
         }
         .jscountdownn {
-            background-color: skyblue;
-            font-size: 30px;
-            background-image: url(images/testpic.jpg);
+            font-size: 46px;
             height: 140px;
             position: relative;
             font-family: 'Anton', sans-serif;
+            text-shadow: 2px 2px black;
+            width: 100%;
+            color: white;
           }
         
         .sqlcountdownn {
-            background-image:url(images/kbhhh.jpg);
+            background-size:cover;
             height: 140px;
             font-family: 'Anton', sans-serif;
-            font-size: 30px;
+            font-size: 45px;
+            color: black;
+            text-shadow: 2px 2px whitesmoke;
+            width: 100%;
         
         }
+        
+        .rf2018bg {
+            
+            height: 140px;
+            font-family: 'Anton', sans-serif;
+            font-size: 44px;
+            color: orange;
+            text-shadow: 2px 2px #A33F1D;
+            width: 100%;
+          
+        }
+        
         h2 {
             font-family: 'Anton', sans-serif;
         }
@@ -132,8 +149,8 @@
         }
         
         .respimg {
-                height: 160px;
-                width: 190px;
+                height: 208px;
+                width: 250px;
                 margin-left: 22px;
                 
         
@@ -145,9 +162,45 @@
                 margin-left: -7px;
         }
         .forum {
-            width: 200px;
-            height: 200px;
+            width: 550px;
+            height: auto;
             background-color: pink;
+            position: inherit;
+        }
+        .shareee {
+            margin-left: 333px;
+        }
+        .tb {
+            background: none;
+            border: none;
+            border-top: none;
+        }
+        .position {
+            margin-top: 50px;
+            margin-left: 10px;
+        }
+        #rfcountdown {
+            width: 100%;
+            height: 100%;
+            margin-top: 12%;
+        }
+        .bs {
+            box-shadow: 20px 20px 20px 3px rgba(0, 0, 0, 0.5);
+            border-top: none;
+            border: none;
+            }
+        
+        .goback {
+            margin-top: -90px;
+        }
+        h5 {
+            position: relative;
+            font-size: 50px;
+            color: white;
+            margin-top: -100px;
+            padding-bottom: 50px;
+            padding-left: 9%;
+            text-shadow: 4px 4px black;
         }
 	</style>
 
@@ -155,7 +208,6 @@
 
 <body>
     
-    <img id="logo" src="images/logo2w.png">
 <!---PHP-->    
     <h1>  <?php 
    //  include("database.php");
@@ -180,12 +232,12 @@ Your browser does not support the video tag.
 	<div class="navbar navbar-inverse navbar-fixed-bottom">
 	  <div class="navbar-inner">
 	  	<div class="container">
-            
 		    <a class="brand" href="#">#TAKECONTROL</a>
 		    <ul class="nav">
-		      <li class="active"><a href="#">Home</a></li>
-		      <li><a href="#">Contact</a></li>
-		      <li><a href="#">Nearest kommune</a></li>
+		      <li class="active"><a href="#"><img src="images/logo2w.png" width="26px" height="55px"></a></li>
+		      <li><a href="#infobar">INFO</a></li>
+		      <li><a href="#home">COUNTDOWN</a></li>
+              <li><a href="#about">FEEDBACK</a></li>
 		    </ul>
 		</div>
 	  </div>
@@ -194,18 +246,18 @@ Your browser does not support the video tag.
 	<!-- Section #1 -->
     
 	<section id="intro" data-speed="6" data-type="background">
-		<div class="container">
+		<div class="container" id="infobar">
 			<div class="row-fluid">
                 
-                <div class="span4 well">
+                <div class="span4 well tb">
 		          <img class="respimg" src="images/logo1.png" width="350px">
                     
 		        </div>
-               <div class="span4 well">
+               <div class="span4 well tb">
 		          <img class="respimgk" src="images/kobehavnskommune.png" width="420px" alt="kklogo">
 		        </div> 
                 
-		        <div class="span4 well">
+		        <div class="span4 well tb">
 		          <img class="respimgr" src="images/logo-clean.svg" width="390px" alt="RF">
 		        </div>
 	    	</div>
@@ -227,29 +279,37 @@ In Denmark, the public sector can be divided into the state, regions and municip
     
 	<!-- Section #2 -->
 	<section id="home" data-speed="4" data-type="background" class="votecph">
-		<div class="container">
-			<div class="row-fluid">
-        <!---       <h1 style="color: white; font-size: 50px; position: absolute;  margin: auto;
-    width: 60%; padding: 10px;">DO NOT WASTE YOUR TIME</h1> -->
-		        <div class="span4 well">
-		          <h2>TEST</h2>
+		 <h5>"It is not the voting that's democracy, it's the counting."</h5> 
+        <div class="container">
+			<div class="row-fluid">         
+		        <div class="span4 well bs" style="background-image:url('images/keybcd.jpg'); background-repeat:no-repeat; background-size:cover;">
 		<div class="jscountdownn">
-            <p id="jscountdown" class="first">
-                    </p> 
+            <p id="jscountdown" class="first position">
+                    </p><br> 
+            <p>TEST</p>
                     </div>
+                    
 		        </div><!-- /.span4 -->
-		        <div class="span4 well">
-		          <h2>ELECTIONS</h2>
-		    <div class="sqlcountdownn"> <p id="sqlcountdown">
-                  </p></div>  
+		        <div class="span4 well bs" style="background-image:url('images/citycd.jpg'); background-repeat:no-repeat; background-size:cover;">
+		         
+		    <div class="sqlcountdownn"> <p id="sqlcountdown" class="position">
+                  </p>
+                   <br>
+                <p>ELECTIONS</p>
+                    
+                    </div>  
 
 
 		        </div><!-- /.span4 -->
                 
-		   <div class="span4 well">
-		          <h2>ROSKILDE FESTIVAL 2018</h2>
-               <div class="rfcountdown"> <p id="rfcountdown">
-                  </p></div>  
+		   <div class="span4 well bs" style="background-image:url('images/oscd.jpg'); background-repeat:no-repeat; background-size:cover;">
+
+               <div class="rfcountdown rf2018bg"> <p id="rfcountdown" class="position ">
+                  </p>
+                  
+                   <p class="goback">RF 2018</p>
+                   
+               </div>  
 		        </div><!-- /.span4 -->
 	    	</div>
 	    </div>
@@ -296,64 +356,54 @@ Venstre siger nej til store vindmøller på land indtil sundhedsrisikoen er afkl
 			<div class="page-header">
 			</div>
 			<div class="row-fluid">
+
 		        <div class="span4">
-		          <h2>BUSINESS INFO</h2>
-                  <p>CPH BUSINESS ACADEMY</p>
-		          <p>Nørgaardsvej 30 <br> 2800 Kongens Lyngby</p>
-                  <h2>SPONSORSHIP</h2>
-		          
-		          <p><a class="btn btn-success">View details &raquo;</a></p>
-		        </div><!-- /.span4 -->
-		        <div class="span4">
-         <?php
-            include("database.php");
-           
-                if($link===false){
-                die('connection failed,sorry');
-                }
-            else {
-                echo "connected   ";
-            }
+                    <div class="oldform" style="width:500px;">
+    			<div class="create"> <h2> SHARE YOUR OPINION </h2>
+    				<form action="add-post-it.php" method="post"> 
+						<input type="text" name="name" placeholder="Name" required>
+						<input type="text" name="title" placeholder="Title" required><br>
+        				<textarea type="text" name="comment" maxlength=" " required> </textarea><br>
+        				<input type="button" value="Reset" onClick="this.form.reset()" />
+						<input type="submit" name="cmd" value="Submit" >
+					</form>
+    			</div>
+    			
+    <!-- Displaying Comments-->
+    			<div class="content recent"> 
+			
+					         <?php
+            require_once("database.php");
+                    $queryy = mysqli_query($con, "SELECT * FROM post_it");
+            if($queryy === false){
+            die("ERROR" . mysqli_error());
+          } else {
+            echo '<table>';
+              while($userInfo = mysqli_fetch_array($queryy)){
+                echo '<tr style=" width: 50%; padding-Top: 50px;  ">
+                  <td>
+                  <font padding="50px" paddingTop="150px" size="11" face="Lucida Sans Unicode" color=white >' ."Username: ".$userInfo['name'].' ' ."Title: ".$userInfo['title'].' ' .'<br>' ."Thoughts: " .$userInfo['note'].'  
+                  </td>
+                  </tr>';
+              
+                 // getPosts($link);
+              }
+                  echo '</table>';
 
-            $postit = mysqli_query($link,"SELECT * FROM post_it"); 
-                    $result = mysqli_fetch_array($postit);
-            //    while($link===true){
-                    foreach($postit as $postitt){
-                        echo '<div class="forum">';  
-                        $result = mysqli_fetch_array($postit);
-                    echo $result['name']; echo'<br>';
-                    echo $result['title']; echo'<br>';
-                    echo $result['note']; echo'<br>';
-
-
-                    echo '</div>';         
-                    }
-                
-               // }     
+              }
+        
             ?>       
+                    
+                    
+                    
 		        </div><!-- /.span4 -->
-		        <div class="span4">
-		          <h2>SHARE YOUR OPINION</h2>
-<form action="add-post-it.php" method="post">
-	<fieldset>
-		<p> Name </p>
-		<input type="text" name="name" placeholder="Name" required><br>
-		
-		<p> Title </p>
-		<input type="text" name="title" placeholder="Title" required><br>
-		
-       <p> Note </p>
-        <textarea type="text" name="note" rows="6" cols="30"> </textarea><br>
-		
-		<input type="submit" name="cmd" value="Post it">
-	</fieldset>
-</form>
+            
+		        <div class="span4 shareee">
+		          	
 		        </div><!-- /.span4 -->
 	    	</div>
 	    </div>
-	</section>
 
-</body>
 
   <script>
 		var countDownDate = new Date("Oct 30, 2017 12:00:00").getTime();
