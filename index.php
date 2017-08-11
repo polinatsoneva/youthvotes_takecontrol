@@ -25,6 +25,15 @@
 		    box-shadow: 0 0 50px rgba(0,0,0,0.8);
 		    padding: 100px 0;
 		}
+        #intro2 { 
+			background: url(images/subtle.png) 50% 0 fixed; 
+			height: auto;  
+			margin: 0 auto; 
+		    width: 100%; 
+		    position: relative; 
+		    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+		    padding: 100px 0;
+        }
 		#home { 
 			background: url(images/rf18.jpg) 100% 0 fixed; 
 			height: auto;  
@@ -136,6 +145,7 @@
         
         .venstre {
             padding-right: 60px;
+            width: 50px;
         }
         .venstre:hover {
             width: 65px;
@@ -150,16 +160,16 @@
         
         .respimg {
                 height: 208px;
-                width: 250px;
                 margin-left: 22px;
-                
         
         }
         .respimgr {
                 margin-left: -10px;
+                width:390px;
         }
         .respimgk {
                 margin-left: -7px;
+                width:420px;
         }
         .forum {
             width: 550px;
@@ -185,7 +195,7 @@
             margin-top: 12%;
         }
         .bs {
-            box-shadow: 20px 20px 20px 3px rgba(0, 0, 0, 0.5);
+            box-shadow: 10px 10px 10px 3px rgba(0, 0, 0, 0.5);
             border-top: none;
             border: none;
             }
@@ -202,6 +212,24 @@
             padding-left: 9%;
             text-shadow: 4px 4px black;
         }
+        .video {
+            width:100%;
+            height:100%;
+        }
+        .logo1 {
+            width:26px; 
+        }
+        .fontphp {
+            padding-top:35px; 
+            size:11;
+            font-family:'Lucida Sans Unicode', sans-serif; 
+            color:orange;
+            border: 2px ;
+            border-color: black;
+        }
+        .recent {
+            width: 100.0em;
+        }
 	</style>
 
 </head>
@@ -209,22 +237,9 @@
 <body>
     
 <!---PHP-->    
-    <h1>  <?php 
-   //  include("database.php");
-        
-   //     $title = mysqli_query($link, "Select title from title where id = 1");
-     //   if(!$link){
-       //     die("ERROR" . mysqli_error());
-//        } else {
-//            echo '<div class="title">';
-//                $title_display = mysqli_fetch_array($title);
-//                echo $title_display['title'];
-//            echo '</div>';
-//            }
-        ?></h1>
     
    
-            <video width="100%" height="100%" autoplay loop onloadstart="this.volume=0.0">
+            <video class="video" autoplay loop onloadstart="this.volume=0.0">
   <source src="images/rf.mp4" type="video/mp4">
   <source src="movie.ogg" type="video/ogg">
 Your browser does not support the video tag.
@@ -234,7 +249,7 @@ Your browser does not support the video tag.
 	  	<div class="container">
 		    <a class="brand" href="#">#TAKECONTROL</a>
 		    <ul class="nav">
-		      <li class="active"><a href="#"><img src="images/logo2w.png" width="26px" height="55px"></a></li>
+		      <li class="active"><a href="#"><img src="images/logo2w.png" class="logo1" alt="Image not existing."></a></li>
 		      <li><a href="#infobar">INFO</a></li>
 		      <li><a href="#home">COUNTDOWN</a></li>
               <li><a href="#about">FEEDBACK</a></li>
@@ -245,32 +260,35 @@ Your browser does not support the video tag.
 
 	<!-- Section #1 -->
     
-	<section id="intro" data-speed="6" data-type="background">
+	<section id="intro2" data-speed="6" data-type="background">
 		<div class="container" id="infobar">
 			<div class="row-fluid">
                 
                 <div class="span4 well tb">
-		          <img class="respimg" src="images/logo1.png" width="350px">
+		          <img class="respimg" src="images/logo1.png" alt="Image not existing.">
                     
 		        </div>
                <div class="span4 well tb">
-		          <img class="respimgk" src="images/kobehavnskommune.png" width="420px" alt="kklogo">
+		          <img class="respimgk" src="images/kobehavnskommune.png" alt="kklogo">
 		        </div> 
                 
 		        <div class="span4 well tb">
-		          <img class="respimgr" src="images/logo-clean.svg" width="390px" alt="RF">
+		          <img class="respimgr" src="images/logo-clean.svg" alt="RF">
 		        </div>
 	    	</div>
             <div class="polina" id="poli">
     </div>
 	    	<div class="hero-unit">
 	    		<h2>#TAKECONTROL</h2>
-	    		<p>TV2 Lorry and Roskilde Festival are giving you the chance to win from 5% up to 40% dicount on your ticket for next year!</p>
+	    		<p>TV2 Lorry and Roskilde Festival are giving you the chance to win from 5% up to 40% discount on your ticket for next year!</p>
                 <p>When and how is this happening - you can find out in the nearest kommune.</p><br>
-                <p># WHAT IS THE MISSION OF THE COMMUNITIES<br>
-The municipalities take care of daily and public welfare. This may include social assistance, primary school, day care centers and elderly care. The benefits paid by the municipality to the citizens are financed by the state. This means that the municipality functions as a kind of bank that addresses public welfare for the citizens of the municipalities.</p>
-<p> #DIVIDES OF REGION AND MUNICIPALITY <br>
-In Denmark, the public sector can be divided into the state, regions and municipalities. Regions and municipalities differ from each other, as the regions are far larger than the municipalities. We have 5 regions and 98 municipalities in Denmark. The 5 regions' main task is to administer hospital services and regional development in social areas.</p>
+                <p>Take Control is a campaign put together in order to help educate the young generation and motivate them into taking part in the upcoming elections. Take Control strongly believes if the young generation come together they are able to make a difference in society, which will only benefit them as they are the ones who will deal with its consequences! 
+Due to this need of strong young people. Take Control are offering a chance for you to win up to a 40% discount at Denmark's LARGEST festival. Take Control are offering 18-25-year-old's who choose to vote in the upcoming elections a chance to participate in a questionnaire, which could win them a massive discount up to 40%.<br><br>
+Participants will need to go to their local municipalities in order to participate. However, the discount is only valid after the participant has voted.  
+Do you think you got what it takes to make a difference? <br>
+Make Your Voice Essential This Year and show everybody how you made a difference in the community and a difference in your ticket for Roskilde!</p><br>
+<p>#WhatTheMunicipalitiesAimToDo<br>
+The municipalities are in charge of taking care of the welfare of the community. This varies from different things such as social assistance, school, day care centers or elderly care. Municipalities also support the citizens of the community as the less fortunate are able to attain benefits financed by the state.</p>
             
 	    	</div>
 	    </div>
@@ -306,7 +324,7 @@ In Denmark, the public sector can be divided into the state, regions and municip
 
                <div class="rfcountdown rf2018bg"> <p id="rfcountdown" class="position ">
                   </p>
-                  
+                  <br>
                    <p class="goback">RF 2018</p>
                    
                </div>  
@@ -332,17 +350,17 @@ Venstre siger nej til store vindmøller på land indtil sundhedsrisikoen er afkl
 		<div class="container">
             
 			<div class="row-fluid">
-            <strong><p class="choosew">CHOOSE WISELY</p></strong>
-            <img src="logos/venstre.png" width=50px; class="venstre"/>
-            <img src="logos/alternativet.png" width=50px; class="venstre"/>
-            <img src="logos/dflogo.png" width=50px; class="venstre"/>
-            <img src="logos/dkflogo.png" width=50px; class="venstre"/>
-            <img src="logos/enhedslisten.png" width=50px; class="venstre"/>
-            <img src="logos/liberal.png" width=50px; class="venstre"/>
-            <img src="logos/nlogo.png" width=50px; class="venstre"/>
-            <img src="logos/radikalelogo.png" width=50px; class="venstre"/>
-            <img src="logos/sdlogo.png" width=50px; class="venstre"/>
-            <img src="logos/sflogo.png" width=50px; class="venstre"/>
+            <p class="choosew">CHOOSE WISELY</p>
+            <img src="logos/venstre.png"  class="venstre" alt="Image not existing."/>
+            <img src="logos/alternativet.png"  class="venstre" alt="Image not existing."/>
+            <img src="logos/dflogo.png"  class="venstre" alt="Image not existing."/>
+            <img src="logos/dkflogo.png"  class="venstre" alt="Image not existing."/>
+            <img src="logos/enhedslisten.png" class="venstre" alt="Image not existing."/>
+            <img src="logos/liberal.png" class="venstre" alt="Image not existing."/>
+            <img src="logos/nlogo.png"  class="venstre" alt="Image not existing."/>
+            <img src="logos/radikalelogo.png"  class="venstre" alt="Image not existing."/>
+            <img src="logos/sdlogo.png" class="venstre" alt="Image not existing."/>
+            <img src="logos/sflogo.png"  class="venstre" alt="Image not existing."/>
             <p class="infoo">Click for more information.</p>
             
           
@@ -363,9 +381,9 @@ Venstre siger nej til store vindmøller på land indtil sundhedsrisikoen er afkl
     				<form action="add-post-it.php" method="post"> 
 						<input type="text" name="name" placeholder="Name" required>
 						<input type="text" name="title" placeholder="Title" required><br>
-        				<textarea type="text" name="comment" maxlength=" " required> </textarea><br>
+        				<input type="text" name="comment" required> /><br>
         				<input type="button" value="Reset" onClick="this.form.reset()" />
-						<input type="submit" name="cmd" value="Submit" >
+						<input type="submit" name="cmd" value="Submit" onClick="this.page.refresh()" />
 					</form>
     			</div>
     			
@@ -380,11 +398,12 @@ Venstre siger nej til store vindmøller på land indtil sundhedsrisikoen er afkl
           } else {
             echo '<table>';
               while($userInfo = mysqli_fetch_array($queryy)){
-                echo '<tr style=" width: 50%; padding-Top: 50px;  ">
-                  <td>
-                  <font padding="50px" paddingTop="150px" size="11" face="Lucida Sans Unicode" color=white >' ."Username: ".$userInfo['name'].' ' ."Title: ".$userInfo['title'].' ' .'<br>' ."Thoughts: " .$userInfo['note'].'  
-                  </td>
-                  </tr>';
+                  echo '<tr style=" width: 50%; padding-Top: 50px; ">';
+                  echo '<td>';
+                  echo '<h3 class="fontphp">' ."Username: ".$userInfo['name'].' '.'<br>' ."Title: ".$userInfo['title'].' ' .'<br>' ."Thoughts: " .$userInfo['note'].'>';
+                  echo '</h3>';
+                  echo '</td>';
+                  echo '</tr>';
               
                  // getPosts($link);
               }
@@ -474,5 +493,8 @@ Venstre siger nej til store vindmøller på land indtil sundhedsrisikoen er afkl
             
             });
     </script>
-    
+            </div>
+        </div>
+    </section>
+    </body>
 </html>

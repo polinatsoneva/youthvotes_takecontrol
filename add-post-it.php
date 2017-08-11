@@ -17,7 +17,6 @@ require_once('database.php');
         $sql = "Insert into post_it (name, title, note) VALUES ('$name', '$title', '$note' ) ";
         if ($con->query($sql) === TRUE) {
         echo '<script type="text/js">';
-        echo  'window.location.href=window.location.href';
         echo '</script>';
         } else {
             echo "Error: " . $sql . "<br>" . $con->error;
