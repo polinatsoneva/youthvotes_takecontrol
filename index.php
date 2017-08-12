@@ -230,17 +230,19 @@
         .recent {
             width: 100.0em;
         }
+        .logoooo {
+            
+              
+        }
 	</style>
 
 </head>
 
-<body>
-    
-<!---PHP-->    
+<body>  
     
    
             <video class="video" autoplay loop onloadstart="this.volume=0.0">
-  <source src="images/rf.mp4" type="video/mp4">
+  <source src="images/rfvideofinished.mp4" type="video/mp4">
   <source src="movie.ogg" type="video/ogg">
 Your browser does not support the video tag.
             </video>
@@ -264,7 +266,7 @@ Your browser does not support the video tag.
 		<div class="container" id="infobar">
 			<div class="row-fluid">
                 
-                <div class="span4 well tb">
+                <div class="span4 well tb logoooo">
 		          <img class="respimg" src="images/logo1.png" alt="Image not existing.">
                     
 		        </div>
@@ -387,7 +389,7 @@ Venstre siger nej til store vindmøller på land indtil sundhedsrisikoen er afkl
 					</form>
     			</div>
     			
-    <!-- Displaying Comments-->
+    <!-- Displaying Comments // PHP -->
     			<div class="content recent"> 
 			
 					         <?php
@@ -423,7 +425,7 @@ Venstre siger nej til store vindmøller på land indtil sundhedsrisikoen er afkl
 	    	</div>
 	    </div>
 
-
+<!-- COUNTDOWNS JS -->
   <script>
 		var countDownDate = new Date("Oct 30, 2017 12:00:00").getTime();
       
