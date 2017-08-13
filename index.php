@@ -427,10 +427,8 @@ Venstre siger nej til store vindmøller på land indtil sundhedsrisikoen er afkl
 
 <!-- COUNTDOWNS JS -->
   <script>
-		var countDownDate = new Date("Oct 30, 2017 12:00:00").getTime();
-      
-        var countDownDateEL = new Date("Nov 21, 2017 8:00:00").getTime();
-      
+		var countDownDate = new Date("Oct 30, 2017 12:00:00").getTime(); 
+        var countDownDateEL = new Date("Nov 21, 2017 8:00:00").getTime(); 
         var countDownDateRF = new Date("June 30, 2018 12:00:00").getTime();
       
 		var x = setInterval(function() {
@@ -438,29 +436,23 @@ Venstre siger nej til store vindmøller på land indtil sundhedsrisikoen er afkl
 		    var distance = countDownDate - now;
             var distanceelection = countDownDateEL - now;
             var distancerf = countDownDateRF - now;
-            
-          
-
+    
 		    // Time calculations for days, hours, minutes and seconds
 		    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
 		    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 		    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            
+		    var seconds = Math.floor((distance % (1000 * 60)) / 1000); 
 		    <!-- -->
                 var dayss = Math.floor(distanceelection / (1000 * 60 * 60 * 24));
 		    var hourss = Math.floor((distanceelection % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 		    var minutess = Math.floor((distanceelection % (1000 * 60 * 60)) / (1000 * 60));
 		    var secondss = Math.floor((distanceelection % (1000 * 60)) / 1000);
-            
             <!-- -->
                 var daysss = Math.floor(distancerf / (1000 * 60 * 60 * 24));
 		    var hoursss = Math.floor((distancerf % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 		    var minutesss = Math.floor((distancerf % (1000 * 60 * 60)) / (1000 * 60));
 		    var secondsss = Math.floor((distancerf % (1000 * 60)) / 1000);
                 
-                
-            
 		    document.getElementById("jscountdown").innerHTML = days + "d " + hours + "h "
 		    + minutes + "m " + seconds + "s ";
             
@@ -476,7 +468,9 @@ Venstre siger nej til store vindmøller på land indtil sundhedsrisikoen er afkl
 		        document.getElementById("jscountdown").innerHTML = "EXPIRED";
 		    }
 		}, 1000);
-        
+      
+      
+      // jQuery 
             $(".whiteb").hide();
             $(".venstre").click(function(){
             $(".whiteb").show(function(){
