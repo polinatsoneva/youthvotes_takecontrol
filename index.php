@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>#TAKECONTROL</title>
 	<meta name="description" content="Roskilde Festival / 2018 / Denmark / Copenhagen / VALG">
-	<meta name="viewport takecontrol" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="images/logo1.png" />
 	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
