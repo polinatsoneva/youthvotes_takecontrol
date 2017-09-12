@@ -365,7 +365,7 @@ Venstre siger nej til store vindmøller på land indtil sundhedsrisikoen er afkl
             <img src="logos/radikalelogo.png"  class="venstre" alt="Image not existing."/>
             <img src="logos/sdlogo.png" class="venstre" alt="Image not existing."/>
             <img src="logos/sflogo.png"  class="venstre" alt="Image not existing."/>
-            <p class="infoo">Click for more information.</p>
+            <p class="infoo">Click on the icons for more information.</p>
             
           
             </div> 
@@ -373,7 +373,7 @@ Venstre siger nej til store vindmøller på land indtil sundhedsrisikoen er afkl
 	</section>
 
 	<!-- Section #3 -->
-	<section id="about" data-speed="2" data-type="background">
+<!--	<section id="about" data-speed="2" data-type="background">
 		<div class="container">
 			<div class="page-header">
 			</div>
@@ -389,10 +389,10 @@ Venstre siger nej til store vindmøller på land indtil sundhedsrisikoen er afkl
         				<input type="button" value="Reset" onClick="this.form.reset()" />
 						<input type="submit" name="cmd" value="Submit" onClick="this.page.refresh()" />
 					</form>
-    			</div>
+    			</div> -->
     			
     <!-- Displaying Comments // PHP -->
-    			<div class="content recent"> 
+    			<!--<div class="content recent"> -->
 			
 					         <?php
             require_once("database.php");
@@ -419,13 +419,12 @@ Venstre siger nej til store vindmøller på land indtil sundhedsrisikoen er afkl
                     
                     
                     
-		        </div><!-- /.span4 -->
+		    <!--    </div><!-- /.span4 -->
             
-		        <div class="span4 shareee">
+	<!--	        <div class="span4 shareee"> 
 		          	
-		        </div><!-- /.span4 -->
-	    	</div>
-	    </div>
+		        </div><!-- /.span4 --> 
+	    
 
 <!-- COUNTDOWNS JS -->
   <script>
