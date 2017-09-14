@@ -256,7 +256,6 @@ Your browser does not support the video tag.
 		      <li class="active"><a href="#"><img src="images/logo2w.png" class="logo1" alt="Image not existing."></a></li>
 		      <li><a href="#infobar">INFO</a></li>
 		      <li><a href="#home">COUNTDOWN</a></li>
-              <li><a href="#about">FEEDBACK</a></li>
 		    </ul>
 		</div>
 	  </div>
@@ -371,60 +370,8 @@ Venstre siger nej til store vindmøller på land indtil sundhedsrisikoen er afkl
             </div> 
             </div>
 	</section>
-
-	<!-- Section #3 -->
-<!--	<section id="about" data-speed="2" data-type="background">
-		<div class="container">
-			<div class="page-header">
-			</div>
-			<div class="row-fluid">
-
-		        <div class="span4">
-                    <div class="oldform" style="width:500px;">
-    			<div class="create"> <h2> SHARE YOUR OPINION </h2>
-    				<form action="add-post-it.php" method="post"> 
-						<input type="text" name="name" placeholder="Name" required>
-						<input type="text" name="title" placeholder="Title" required><br>
-        				<input type="text" name="comment" required> /><br>
-        				<input type="button" value="Reset" onClick="this.form.reset()" />
-						<input type="submit" name="cmd" value="Submit" onClick="this.page.refresh()" />
-					</form>
-    			</div> -->
     			
-    <!-- Displaying Comments // PHP -->
-    			<!--<div class="content recent"> -->
-			
-					         <?php
-            require_once("database.php");
-                    $queryy = mysqli_query($con, "SELECT * FROM post_it");
-            if($queryy === false){
-            die("ERROR" . mysqli_error());
-          } else {
-            echo '<table>';
-              while($userInfo = mysqli_fetch_array($queryy)){
-                  echo '<tr style=" width: 50%; padding-Top: 50px; ">';
-                  echo '<td>';
-                  echo '<h3 class="fontphp">' ."Username: ".$userInfo['name'].' '.'<br>' ."Title: ".$userInfo['title'].' ' .'<br>' ."Thoughts: " .$userInfo['note'].'>';
-                  echo '</h3>';
-                  echo '</td>';
-                  echo '</tr>';
-              
-                 // getPosts($link);
-              }
-                  echo '</table>';
 
-              }
-        
-            ?>       
-                    
-                    
-                    
-		    <!--    </div><!-- /.span4 -->
-            
-	<!--	        <div class="span4 shareee"> 
-		          	
-		        </div><!-- /.span4 --> 
-	    
 
 <!-- COUNTDOWNS JS -->
   <script>
@@ -490,8 +437,5 @@ Venstre siger nej til store vindmøller på land indtil sundhedsrisikoen er afkl
             
             });
     </script>
-            </div>
-        </div>
-    </section>
     </body>
-</html>
+</html>           
