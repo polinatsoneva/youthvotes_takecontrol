@@ -5,7 +5,7 @@
 	<title>#TAKECONTROL</title>
     <meta name="description" content="TV2 Lorry and Roskilde Festival are giving you the chance to win from 5% up to 40% discount on your ticket for next year!
 When and how is this happening - you can find out in the nearest kommune.">
-	<meta name="keywords" content="Roskilde Festival / 2018 / Denmark / Copenhagen / VALG">
+	<meta name="keywords" content="Roskilde Festival,2018,Denmark,Copenhagen,VALG,elections,#takecontrol,take control">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="images/logo1.png" />
 	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
